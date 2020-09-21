@@ -11,23 +11,40 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	@media screen and (min-width: 601px) {
+	div.fontsz {
+		font-size: 60px;
+	}
+	}
+
+	@media screen and (max-width: 600px) {
+	div.fontsz {
+		padding-bottom: 10px;
+		font-size: 45px;
+		
+	}
+	}
+	</style>
 </head>
 <body>
 	<Center>
+		<div class="fontsz">
 <div class="container">
-	<br><br><br><br>
-	<h2> Enter Comment</h2>
+	<br>
+	<!-- <br><br><br><br> -->
+	Enter Comment
 	<form class="form-inline">
 	  <div class="form-group">
-	    <label class="sr-only" for="nameInput">Name</label>
-	    <input type="text" class="form-control" id="nameInput" placeholder="Comment">
+	    <!-- <label class="sr-only" for="nameInput">Name</label> -->
+	    <input type="text" class="form-control" id="nameInput" placeholder="Comment" style="height:40px;font-size:20pt;" size="40%">
 	  </div>
 	  <!-- <button type="submit" class="btn btn-default">Submit</button> -->
 	</form>
-	<br>
 	<div id="successAlert" class="alert alert-success" role="alert" style="display:none; width:60%;"></div>
-	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none; width: 70%;"></div>
-</div>
+	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none; width: 60%;"></div>
+</div></div>
 </Center>
 </body>
 </html>
