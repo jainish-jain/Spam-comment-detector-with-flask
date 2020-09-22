@@ -4,17 +4,17 @@ This repository is based on the flask framework web application, with the help o
 
 ## File Structure
 
-📦Spam-comment-detector-with-flask
- ┣ 📂static
- ┃ ┗ 📂js
- ┃    ┣ 📜app.js
- ┃    ┣ 📜form.js
- ┃    ┗ 📜particles.js
- ┣ 📂templates
- ┃ ┗ 📜form.html
- ┣ 📜SPAM.csv
- ┣ 📜app.py
- ┗ 📜requirements.txt
+📦Spam-comment-detector-with-flask <br>
+ ┣ 📂static<br>
+ ┃ ┗ 📂js<br>
+ ┃    ┣ 📜app.js<br>
+ ┃    ┣ 📜form.js<br>
+ ┃    ┗ 📜particles.js<br>
+ ┣ 📂templates<br>
+ ┃ ┗ 📜form.html<br>
+ ┣ 📜SPAM.csv<br>
+ ┣ 📜app.py<br>
+ ┗ 📜requirements.txt<br>
 
 ## Flask
 
@@ -67,8 +67,8 @@ in practice, fractional counts such as tf-idf may also work.
 
 ### GUI
 
-<img title="" src="file:///guiimages/mainscreen.png" alt="">
-
-<img title="" src="file:///guiimages/spamscreen.png" alt="">
-
-<img title="" src="file:///guiimages/hamscreen.png" alt="">
+<img title="" src="/guiimages/mainscreen.png" alt="">
+<br>
+<img title="" src="/guiimages/spamscreen.png" alt="">
+<br>
+<img title="" src="/guiimages/hamscreen.png" alt="">
