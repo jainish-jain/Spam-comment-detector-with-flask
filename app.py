@@ -14,7 +14,7 @@ df_data = df[["Message","Category"]]
 df_x = df_data['Message']
 df_y = df_data.Category
 # Extract Feature With CountVectorizer
-corpus = df_x
+corpus = df_x.values.astype('U')
 cv = CountVectorizer()
 X = cv.fit_transform(corpus) # Fit the Data
 from sklearn.model_selection import train_test_split
