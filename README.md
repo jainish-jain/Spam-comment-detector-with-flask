@@ -3,11 +3,11 @@
 This repository is based on the flask framework web application, with the help of Machine Learning, the application is capable to detect that the comment is spam or not.  
 
 ## File Structure
-<p>
+
 📦Spam-comment-detector-with-flask <br>
  ┣ 📂static<br>
  ┃ ┗ 📂js<br>
- ┃    ┣ 📜app.js<br>
+ ┃      ┣ 📜app.js<br>
  ┃    ┣ 📜form.js<br>
  ┃    ┗ 📜particles.js<br>
  ┣ 📂templates<br>
@@ -15,7 +15,7 @@ This repository is based on the flask framework web application, with the help o
  ┣ 📜SPAM.csv<br>
  ┣ 📜app.py<br>
  ┗ 📜requirements.txt<br>
-</p>
+
 ## Flask
 
 A microframework based on Werkzeug. It's extensively documented
