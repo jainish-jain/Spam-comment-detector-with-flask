@@ -66,4 +66,4 @@ def predict():
 	# return jsonify({'error' : 'Missing data!'})
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='192.168.29.254' , debug=True)
