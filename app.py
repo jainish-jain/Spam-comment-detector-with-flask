@@ -31,17 +31,29 @@ app = Flask(__name__)
 def index():
 	return render_template('form.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST','GET'])
 def process():
-    name = request.form['name']
-    data = [name]
-    vect = cv.transform(data).toarray()
-    my_prediction = clf.predict(vect)
-    result = "Not a Spam"
-    if my_prediction == 'spam':
-        result="Spam"
-        return jsonify({'error':result})
-    return jsonify({'name':result})
+    if request.method == 'POST':
+        name = request.form['name']
+        data = [name]
+        vect = cv.transform(data).toarray()
+        my_prediction = clf.predict(vect)
+        result = "Not a Spam"
+        if my_prediction == 'spam':
+            result="Spam"
+            return jsonify({'error':result})
+        return jsonify({'name':result})
+    elif request.method=='GET':
+        name = request.args.get('nameInput')
+        data = [name]
+        vect = cv.transform(data).toarray()
+        my_prediction = clf.predict(vect)
+        result = "Not a Spam"
+        if my_prediction == 'spam':
+            result="Spam"
+            return jsonify({'error':result})
+        return jsonify({'name':result})
+
 	
 	# email = request.form['email']
 	# name = request.form['name']
