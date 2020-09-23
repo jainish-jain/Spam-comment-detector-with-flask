@@ -5,7 +5,7 @@ $(document).ready(function() {
 		// console.log($('#commentInput').val());
 		$.ajax({
 			data : {
-				comment : $('commentInput').val(),
+				comment : $('#nameInput').val(),
 
 				
 			},

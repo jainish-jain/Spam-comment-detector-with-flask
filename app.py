@@ -34,7 +34,7 @@ def index():
 @app.route('/predict', methods=['POST','GET'])
 def predict():
     if request.method == 'POST':
-        name = request.form['name']
+        name = request.form['comment']
         data = [name]
         vect = cv.transform(data).toarray()
         my_prediction = clf.predict(vect)
