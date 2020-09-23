@@ -1,16 +1,20 @@
+
 $(document).ready(function() {
 
 	$('form').on('input', function(event) {
-
+		// console.log($('#commentInput').val());
 		$.ajax({
 			data : {
-				name : $('#nameInput').val(),
-				// email : $('#emailInput').val()
+				comment : $('commentInput').val(),
+
+				
 			},
 			type : 'POST',
 			url : '/predict'
+			
 		})
 		.done(function(data) {
+			console.log(data);
 
 			if (data.error) {
 				$('#errorAlert').text(data.error).show();
@@ -22,6 +26,7 @@ $(document).ready(function() {
 			}
 
 		});
+		
 
 		event.preventDefault();
 
