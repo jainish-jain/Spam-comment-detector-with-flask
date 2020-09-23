@@ -1,7 +1,7 @@
 # Spam Comment Detector
 
-This repository is based on the flask framework web application, with the help of Machine Learning, the application is capable to detect that the comment is spam or not.  
-
+This repository is based on the flask framework web application, with the help of Machine Learning, the application is capable to detect that the comment is spam or not.The goal of our project was to create a machine learning model that can produced output for anyone.
+Our project has an integrated API structure that recieve users queries and respond to them with the output of our spam email classifier model when fed with the query input parameter.
 ## File Structure
 
 📦Spam-comment-detector-with-flask <br>

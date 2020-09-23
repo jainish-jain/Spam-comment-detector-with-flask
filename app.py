@@ -51,8 +51,8 @@ def predict():
         result = "Not a Spam"
         if my_prediction == 'spam':
             result="Spam"
-            return jsonify({'outcome':result})
-        return jsonify({'outcome':result})
+            return jsonify({"input":name,'outcome':result})
+        return jsonify({'input':name,'outcome':result})
 
 	
 	# email = request.form['email']
