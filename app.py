@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-import pandas as pd 
-#import pickle
+import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import joblib
