@@ -24,7 +24,7 @@ clf.score(X_test,y_test)
 
 
 app = Flask(__name__)
-
+#app.config['SERVER_NAME']="flaskapp:80"
 @app.route('/')
 def index():
 	return render_template('form.html')
@@ -64,4 +64,4 @@ def predict():
 	# return jsonify({'error' : 'Missing data!'})
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0",debug=True)
+	app.run(host="192.168.29.254",port="80",debug=True)    
